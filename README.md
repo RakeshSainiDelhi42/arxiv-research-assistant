@@ -14,6 +14,15 @@ Ask a question about transformer and attention mechanism research. The system em
 
 Every claim in the answer carries the arXiv id of the paper it came from. The retrieved chunks are displayed alongside the answer with their similarity scores, so any claim can be checked against its source. When the retrieved context does not support an answer, the system declines rather than guessing.
 
+## Example questions
+
+- How does relative position representation work in transformers?
+- What is positional encoding and why is it needed in transformers?
+- How is Einstein summation convention used to describe self-attention?
+- What is the best recipe for chicken biryani? — outside the corpus; demonstrates the refusal path
+
+The corpus covers transformers and attention mechanisms. Questions using distinctive terminology from that literature retrieve better than generically phrased ones.
+
 ## Results
 
 Retrieval was evaluated against a hand-labelled question set, where each question is tagged with the paper that should answer it.
