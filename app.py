@@ -14,6 +14,14 @@ answer = get_answer_fn()
 st.title("arXiv Research Assistant")
 st.caption("Ask questions about transformer and attention mechanism research papers. Answers are grounded in 29 arXiv papers with inline citations.")
 
+with st.expander("Example questions"):
+    st.markdown("""
+- How does relative position representation work in transformers?
+- What is positional encoding and why is it needed in transformers?
+- How is Einstein summation convention used to describe self-attention?
+- What is the best recipe for chicken biryani?
+""")
+
 question = st.text_input("Your question", placeholder="How does relative position representation work in transformers?")
 
 if question:
