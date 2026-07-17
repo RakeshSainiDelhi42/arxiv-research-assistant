@@ -5,7 +5,7 @@ st.set_page_config(page_title="arXiv Research Assistant", layout="wide")
 
 @st.cache_resource
 def get_answer_fn():
-    from generate import answer
+    from src.generate import answer
     return answer
 
 

@@ -1,5 +1,5 @@
-from eval_questions import QUESTIONS, UNANSWERABLE
-from generate import retrieve
+from src.eval_questions import QUESTIONS, UNANSWERABLE
+from src.generate import retrieve
 
 hits = 0
 
