@@ -21,6 +21,7 @@ for filename in pdf_files:
     doc.close()
 
     # Ligatures extract as single glyphs, which embed as non-words
+    text = text.replace("\x00", "")
     text = text.replace("\ufb01", "fi").replace("\ufb02", "fl")
     text = re.sub(r"\n{3,}", "\n\n", text)
 
