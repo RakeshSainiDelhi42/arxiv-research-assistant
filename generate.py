@@ -7,7 +7,9 @@ from groq import Groq
 load_dotenv()
 
 TOP_K = 5
-DISTANCE_THRESHOLD = 0.75
+# Calibrated on eval set: answerable questions max 0.42, unanswerable min 0.74.
+# 0.60 sits mid-gap with margin on both sides.
+DISTANCE_THRESHOLD = 0.60
 
 model = SentenceTransformer("all-MiniLM-L6-v2")
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
