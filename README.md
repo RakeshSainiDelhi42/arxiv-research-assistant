@@ -4,6 +4,8 @@ A retrieval-augmented generation (RAG) system that answers questions about machi
 
 ## Live demo
 
+https://arxiv-research-assistant-by-rakesh.streamlit.app
+
 
 
 ## What it does
